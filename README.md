@@ -8,7 +8,8 @@
 > 步驟 4: npm start <br>
 > 去 http://localhost:3000 觀看結果
 
-
+### 操做示意圖
+![image](https://github.com/LOTINGYI/NBA-search/blob/master/src/images/Demo1.png)
 
 ### 搜尋方式
 1. 搜尋相同隊伍的球員
