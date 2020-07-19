@@ -1,38 +1,161 @@
-.App {
+:root {
+  --mainSpacing: 3px;
+}
+
+.nav-top {
+  overflow: hidden;
+  background-color: whitesmoke;
+  padding: 1rem;
+}
+
+.nav-avatar {
+  width: 50px;
+  height: 50px;
+  float: right;
+  border-radius: 15rem;
+}
+
+.menu{
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: azure;
+}
+
+.filter-container {
+  padding: 5em 0;
+}
+
+.filter-form {
+  width: 60vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
+  grid-row-gap: 2rem;
+  grid-column-gap: 40px;
+}
+
+.form-group {
+  text-transform: capitalize;
+}
+
+.form-group label {
+  display: block;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  width: 70%;
+  background: transparent;
+  font-size: 1rem;
+}
+
+.show-container{
+  display: flex;
+  justify-content: center;
+  padding: 1em 0;
+}
+.show-chart{
+  position: relative;
+  left: 25%;
+}
+
+.empty-search {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 2rem 0;
+  padding: 1rem;
+  letter-spacing: var(--mainSpacing);
+}
+
+.playersList {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.table-container{
+  position: relative;
+  display: table;
+  margin: auto;
+  vertical-align: middle;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.playersInfo {
+  border-collapse: collapse;
+  width: 80%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.playersInfo td,
+.playersInfo th {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.playersInfo tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.playersInfo tr:hover {
+  background-color: #ddd;
+}
+
+.playersInfo th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4caf50;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.pagination-container{
+  
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination {
+  display: flex;
+  justify-content: center;
+  
 }
+
+
+.card {
+  position: relative;
+  top: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.card-team {
+  color: grey;
+  font-size: 18px;
+}
+
+.card-bottom {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card-content {
+  text-align: center;
+}
+
