@@ -25,10 +25,20 @@ function PlayersContainer({ context }) {
         indexOfFirstPost = indexOfLastPost - postsPerPage
         currentPost = sortedPlayers.slice(indexOfFirstPost, indexOfLastPost)
     }
-
+   
     const paginate = (pageNumber) => setCurrentPage(pageNumber)
-    const nextPage = () => setCurrentPage(currentPage + 1)
-    const prevPage = () => setCurrentPage(currentPage - 1)
+    const nextPage = () => {
+        if ((currentPage + 1)> Math.ceil(sortedPlayers.length/postsPerPage)) {
+            return setCurrentPage(currentPage)
+        }
+        return setCurrentPage(currentPage + 1)
+    }
+    const prevPage = () => {
+        if ((currentPage - 1) === 0) {
+            return setCurrentPage(currentPage)
+        }
+        return setCurrentPage(currentPage - 1)
+    }
 
     return (
         <div>

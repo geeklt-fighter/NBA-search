@@ -15,7 +15,6 @@ export default function TpModal({ all }) {
       }
     })
   }
-  console.log(map)
 
   let count = 1;
   for (let value of map.values()) {

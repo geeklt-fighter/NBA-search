@@ -4,7 +4,7 @@ import TpModal from './TpModal'
 const getUnique = (items, value) => {
     return [...new Set(items.map(item => item[value]))]
 }
-export default function PlayersFilter({ all, players,paginate }) {
+export default function PlayersFilter({ currentPage,all, players,paginate }) {
     const { handleChange, type, name } = useContext(PlayerContext)
 
     let teams = getUnique(players, 'team_name')
@@ -36,6 +36,7 @@ export default function PlayersFilter({ all, players,paginate }) {
                             id="name"
                             className="form-control"
                             value={name}
+                            onClick={() => paginate(1)}
                             onChange={handleChange} />
                     </div>
                 </form>

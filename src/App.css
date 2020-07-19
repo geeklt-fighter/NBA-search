@@ -23,7 +23,7 @@
 }
 
 .filter-container {
-  padding: 5em 0;
+  padding: 1em 0;
 }
 
 .filter-form {
@@ -105,17 +105,16 @@
 
 .playersInfo th {
   padding-top: 12px;
-  padding-bottom: 12px;
+  padding-bottom: 5px;
   text-align: left;
   background-color: #4caf50;
   color: white;
 }
 
 .pagination-container{
-  
   width: 50%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 5px;
   display: flex;
   justify-content: center;
 }
@@ -123,9 +122,7 @@
 .pagination {
   display: flex;
   justify-content: center;
-  
 }
-
 
 .card {
   position: relative;
